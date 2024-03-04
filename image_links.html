@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Images and Links</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .centre {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    section {
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 15px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      
+    }
+   
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 15px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 9%;
+    }
+
+    .grid img {
+      width: 70%;
+      height: auto;
+      display: block;
+    }
+    
+    nav {
+      background-color: #333;
+      color: wheat;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <nav><h1>
+    <a href="#Home">Home</a> |
+    <a href="#Gallery">Gallery</a> |
+    <a href="#Menu">Menu</a>
+  </h1>
+  </nav>
+  <section id="Home">
+    <p>Welcome to our page! Today we are going to discuss images and links in HTML.
+      <br>
+      How to insert images into pages and make images and or texts links.
+    </p>
+    <h1>Images</h1>
+    <p>In this first part, we will explore how to insert images into our webpage. We will download a few pictures on different relevant topics and then see how to insert them. For this particular part, we will focus on 3 different topics, each including an image relevant to the topic.</p>
+    <h2>How to Insert Images</h2>
+    <p>To insert images, we need to add the <code>&lt;img&gt;</code> tag with the <code>src</code> attribute specifying the URL or path to the image file. Let's start with our first topic, which is Technology, particularly Artificial Intelligence (A.I.).</p>
+    <p>Artificial Intelligence (A.I.) has become an integral part of modern technology. It encompasses various techniques and algorithms aimed at enabling computers to perform tasks that traditionally require human intelligence. A.I. technologies power applications ranging from virtual assistants and chatbots to autonomous vehicles and medical diagnosis systems.</p>
+    <p>For our A.I. topic, let's insert an image of a futuristic robot analyzing data:</p>
+    <br>
+    <div class="centre">
+      <img src="images/technology.avif" alt="Artificial Intelligence" width="600" height="800">
+    </div>
+  </section>
+  <section id="Gallery">
+    <h1>Gallery</h1>
+    <p>In this section, we will create a gallery displaying images related to nature. Each image will be linked to an external website for further information.</p>
+    <p>Nature has always been a source of inspiration for artists, photographers, and enthusiasts alike. From breathtaking landscapes to fascinating wildlife, nature's beauty is unparalleled. In our gallery, we will showcase a variety of nature images capturing its diversity and magnificence.</p>
+    <div class="grid">
+      <a href="https://www.pexels.com/photo/cropland-duiring-night-time-1743165/"><img src="images/grass.webp" alt="Nature 1"></a>
+      <a href="https://example.com/nature2"><img src="images/nature3.jpeg" alt="Nature 2"></a>
+      <a href="https://example.com/nature3"><img src="images/nature4.jpeg" alt="Nature 3"></a>
+    </div>
+    
+    <div class="grid">
+      <a href="https://example.com/nature1"><img src="images/nature5.webp" alt="Nature 1"></a>
+      <a href="https://www.pexels.com/photo/green-cactus-2888491/"><img src="images/cactus.jpeg" alt="Cactus"></a>
+      <a href="https://www.pexels.com/photo/photo-of-green-leaves-3571551/"><img src="images/nature6.jpeg" alt="images/nature6"></a>
+    </div>
+    <p>Explore these images to immerse yourself in the beauty of nature!</p>
+  </section>
+  <section id="Menu">
+    <h1>Menu</h1>
+    <p>In the Menu section, we will list some food items, and each item will be linked to an image related to that food.</p>
+    <p>Food holds a special place in our lives, providing nourishment, pleasure, and cultural significance. From savory dishes to delectable desserts, there's a wide array of culinary delights to explore. In our menu, we will feature some popular food items, each accompanied by an enticing image.</p>
+    <ul>
+      <li><a href="https://www.bbcgoodfood.com/recipes/collection/steak-recipes"><img src="images/food.avif" alt="Steak" width="200" height="300"></a> <br><br>BBQ</li>
+      <li><a href="https://www.bbcgoodfood.com/recipes/collection/beef-recipes"><img src="images/beef.jpeg" alt="Beef" width="200" height="300"></a> <br><br>Beef</li>
+      <li><a href="https://sallysbakingaddiction.com/chewy-chocolate-chip-cookies/"><img src="images/cookies.jpeg" alt="Cookies" width="200" height="300"></a> <br><br>Cookies</li>
+    </ul>
+    <p>Bon appétit! Feel free to click on the images to explore more about these delicious food items and how to cook them.</p>
+  </section>
+</body>
+</html>
